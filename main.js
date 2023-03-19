@@ -25,6 +25,16 @@ $("#contact-form").addEventListener("submit", (e) => {
   $("#message").value = "";
 });
 
-$("#nav-toggle-btn").addEventListener("click", () => {
+document.querySelectorAll("section").forEach((s) => {
+  s.addEventListener("click", () => {
+    $("#nav-wrapper").classList.remove("open-burger");
+  });
+});
+
+$("footer").addEventListener("click", () => {
+  $("#nav-wrapper").classList.remove("open-burger");
+});
+
+$("#nav-toggle-btn").addEventListener("click", (e) => {
   $("#nav-wrapper").classList.toggle("open-burger");
 });

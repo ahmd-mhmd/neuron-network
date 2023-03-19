@@ -140,7 +140,7 @@ header.active .nav-link {
     color: rgb(var(--grey));
 }
 
-header.active .nav-link:hover {
+HEAD header.active .nav-link:hover {
     /* color: #808080; */
 }
 
@@ -162,6 +162,45 @@ header.active .button:hover {
     border: 1px solid rgba(var(--blue), 0.3);
     border-radius: 5px;
     color: rgba(var(--white));
+    align-items: flex-start;
+    flex-direction: column;
+    overflow: hidden;
+    width: 100vw;
+    height: 0;
+    box-sizing: border-box;
+    transition: 0.5s ease;
+    backdrop-filter: blur(20px);
+    border-top: 1px solid rgba(var(--light), 0.3);
+    border-bottom: 1px solid rgba(var(--light), 0.3);
+    background-color: rgba(var(--dark), 0.9);
+}
+
+.nav-wrapper.open-burger {
+    height: 300px;
+    max-height: calc(100vh - 7.5rem);
+    overflow-y: auto;
+}
+
+.nav-list {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem;
+}
+
+.nav-wrapper .button {
+    margin-left: 2rem;
+}
+
+.nav-list li {
+    width: 90vw;
+}
+
+.nav-link:hover {
+    color: transparent;
+}
+
+.navbar {
+    gap: 40%;
 }
 
 @media screen and (max-width: 550px) {
@@ -785,18 +824,16 @@ textarea {
 
 .parallax1>use {
     animation: move-forever1 10s linear infinite;
-}
-
-.parallax1:nth-child(1) {
-    animation-delay: -2s;
+    &:nth-child(1) {
+        animation-delay: -2s;
+    }
 }
 
 .parallax2>use {
     animation: move-forever2 8s linear infinite;
-}
-
-.parallax2:nth-child(1) {
-    animation-delay: -2s;
+    &:nth-child(1) {
+        animation-delay: -2s;
+    }
 }
 
 .parallax3>use {
@@ -808,10 +845,9 @@ textarea {
 
 .parallax4>use {
     animation: move-forever4 4s linear infinite;
-}
-
-.parallax4:nth-child(1) {
-    animation-delay: -2s;
+    &:nth-child(1) {
+        animation-delay: -2s;
+    }
 }
 
 @keyframes move-forever1 {
