@@ -778,7 +778,7 @@ header.active .button:hover {
 }
 
 @media only screen and (max-width: 767px) {
-    .ag-format-container {
+    .services-container {
         width: 96%;
     }
 }

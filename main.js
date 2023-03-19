@@ -1,40 +1,40 @@
 function $(s) {
-  return document.querySelector(s);
+    return document.querySelector(s);
 }
 document.querySelectorAll(".project").forEach((proj) => {
-  proj.addEventListener("mousemove", (e) => {
-    proj.setAttribute(
-      "style",
-      `--x: ${
+    proj.addEventListener("mousemove", (e) => {
+        proj.setAttribute(
+            "style",
+            `--x: ${
         (-2 * (e.layerY - proj.clientHeight / 2)) / proj.clientHeight
       }; --y: ${(2 * (e.layerX - proj.clientWidth / 2)) / proj.clientWidth}`
-    );
-  });
-  proj.addEventListener("mouseleave", () => {
-    proj.setAttribute("style", "--x: 0; --y: 0");
-  });
-  proj.addEventListener("blur", () => {
-    proj.setAttribute("style", "--x: 0; --y: 0");
-  });
+        );
+    });
+    proj.addEventListener("mouseleave", () => {
+        proj.setAttribute("style", "--x: 0; --y: 0");
+    });
+    proj.addEventListener("blur", () => {
+        proj.setAttribute("style", "--x: 0; --y: 0");
+    });
 });
 
 $("#contact-form").addEventListener("submit", (e) => {
-  e.preventDefault();
-  $("#name").value = "";
-  $("#email").value = "";
-  $("#message").value = "";
+    e.preventDefault();
+    $("#name").value = "";
+    $("#email").value = "";
+    $("#message").value = "";
 });
 
 document.querySelectorAll("section").forEach((s) => {
-  s.addEventListener("click", () => {
-    $("#nav-wrapper").classList.remove("open-burger");
-  });
+    s.addEventListener("click", () => {
+        $("#nav-wrapper").classList.remove("open-burger");
+    });
 });
 
 $("footer").addEventListener("click", () => {
-  $("#nav-wrapper").classList.remove("open-burger");
+    $("#nav-wrapper").classList.remove("open-burger");
 });
 
 $("#nav-toggle-btn").addEventListener("click", (e) => {
-  $("#nav-wrapper").classList.toggle("open-burger");
+    $("#nav-wrapper").classList.toggle("open-burger");
 });
