@@ -137,10 +137,6 @@ header.active .nav-link {
   color: rgb(var(--grey));
 }
 
-header.active .nav-link:hover {
-  /* color: #808080; */
-}
-
 header.active .button {
   background-color: rgb(var(--grey));
   color: rgb(var(--white));
@@ -188,7 +184,6 @@ header.active .button:hover {
   .nav-list {
     flex-direction: column;
     gap: 1.5rem;
-    /* margin-bottom: 2rem; */
     padding: 2rem;
   }
   .nav-wrapper .button {
@@ -196,6 +191,9 @@ header.active .button:hover {
   }
   .nav-list li {
     width: 90vw;
+  }
+  .nav-link:hover {
+    color: transparent;
   }
   .navbar {
     gap: 40%;
