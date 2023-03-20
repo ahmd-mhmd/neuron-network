@@ -684,13 +684,18 @@ header.active .button:hover {
   overflow: hidden;
   border-radius: 28px;
   max-width: 90vw;
+  box-shadow: 5px 5px 5px rgba(var(--black), 0.4),
+    -5px -5px 5px rgba(var(--light), 0.1);
 }
 
 .services-item_link {
   display: block;
   padding: 30px 20px;
+  border-radius: 28px;
   height: 100%;
   background-color: rgb(var(--very-dark));
+  box-shadow: inset 5px 5px 5px rgba(var(--light), 0.1),
+    inset -5px -5px 5px rgba(var(--black), 0.4);
   overflow: hidden;
   position: relative;
 }
