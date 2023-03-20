@@ -666,15 +666,15 @@ header.active .button:hover {
 .services_box {
   display: grid;
   grid-template-columns: minmax(300px, 480px);
-  gap: 30px;
+  gap: 3.5rem;
   padding: 50px 5vw;
 }
-@media screen and (min-width: 680px) {
+@media screen and (min-width: 720px) {
   .services_box {
     grid-template-columns: repeat(2, minmax(310px, 480px));
   }
 }
-@media screen and (min-width: 1050px) {
+@media screen and (min-width: 1090px) {
   .services_box {
     grid-template-columns: repeat(3, minmax(310px, 480px));
   }
