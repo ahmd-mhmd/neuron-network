@@ -422,10 +422,8 @@ header.active .button:hover {
 
 .projects-list {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
   gap: 4rem;
+  padding: 1rem;
 }
 
 .project-outer {
@@ -450,16 +448,17 @@ header.active .button:hover {
   width: calc(33.33% - 40px);
   border-radius: 10px;
   width: 300px;
-  height: 450px;
+  min-height: 85%;
   overflow: hidden;
   transform: rotate3d(var(--x), var(--y), 0, 10deg);
   transition: 0.3s ease-out;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   color: rgb(var(--black));
-  padding-bottom: 15px;
+  padding: 2rem;
+  gap: 2rem;
 }
 
 .project * {
@@ -478,6 +477,9 @@ header.active .button:hover {
 
 .project:hover {
   box-shadow: 0 0 20px rgba(var(--light), 0.3);
+}
+.project:hover h3 {
+  color: rgba(var(--blue));
 }
 
 .project:hover::before {
@@ -500,6 +502,7 @@ header.active .button:hover {
   text-align: center;
   color: rgb(var(--white));
   font-size: 2rem;
+  transition: 0.3s ease;
 }
 
 .project p {
