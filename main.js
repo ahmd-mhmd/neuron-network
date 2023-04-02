@@ -35,7 +35,7 @@ $("footer").addEventListener("click", () => {
   $("#nav-wrapper").classList.remove("open-burger");
 });
 
-$("#nav-toggle-btn").addEventListener("click", (e) => {
+$("#nav-toggle-btn").addEventListener("click", () => {
   $("#nav-wrapper").classList.toggle("open-burger");
 });
 
