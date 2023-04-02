@@ -378,6 +378,7 @@ body {
     color: rgb(var(--white));
     background-color: rgb(var(--dark));
     overflow-x: hidden;
+		position: relative;
 }
 
 a {
@@ -387,6 +388,40 @@ a {
 
 
 /* End general styles */
+
+/* blob style */
+.blob-wrapper {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: -10;
+	filter: blur(100px);
+}
+
+.blob {
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	background-image: linear-gradient(to right, rgba(var(--blue)), rgba(var(--light)));
+	border-radius: 50%;
+	animation: rotation 10s infinite linear;
+	/*transition: 0.1s ease-out;*/
+	display: none;
+}
+@media (hover: hover) {
+	.blob {
+		display: block;
+	}
+}
+@keyframes rotation {
+	from {
+		rotate: 0deg;
+	} to {
+		rotate: 360deg;
+	}
+}
 
 
 /* start header styles */
@@ -976,7 +1011,7 @@ figure {
 .about_container .about_card {
     position: relative;
     width: 300px;
-    height: 400px;
+    height: 250px;
     background: rgba(255, 255, 255, 0.05);
     margin: 20px;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
@@ -1278,7 +1313,7 @@ figure {
     padding: 15px 10px;
     pointer-events: none;
     color: rgba(var(--light), 0.8);
-    transition: 0.5s;
+    transition: 0.5s, backdrop-filter 0s;
 }
 
 .contact-form .input-box input:valid~label,
@@ -1287,11 +1322,13 @@ figure {
 .contact-form .input-box textarea:focus~label {
     color: rgb(var(--blue));
     transform: translateY(-8px);
-    background-color: rgb(var(--dark));
+    /*background-color: rgb(var(--dark));*/
+		backdrop-filter: blur(20px);
     padding: 0px 10px;
     border-right: 1px solid rgba(var(--blue), 0.3);
     border-left: 1px solid rgba(var(--blue), 0.3);
     font-size: 1.2rem;
+		transition: 0.5s, backdrop-filter 0.2s 0.3s;
 }
 
 textarea {

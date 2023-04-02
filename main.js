@@ -59,3 +59,17 @@ function projSpin(sign) {
       "deg);"
   );
 }
+
+
+const blob = document.getElementById("blob") 
+
+window.addEventListener("mousemove", (e) => {
+	if(e.pageY + 200 < document.body.clientHeight) blob.style.top = `${e.pageY - 100}px`;
+	blob.style.left = `${e.pageX - 100}px`;
+	blob.setAttribute("data-y", `${e.screenY}`)
+})
+
+window.addEventListener("scroll", () => {
+	blob.style.top = `${window.scrollY + parseInt(blob.getAttribute("data-y")) - 200}px`
+});
+

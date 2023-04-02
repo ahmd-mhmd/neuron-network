@@ -1,43 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Neuron Network</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css" />
+    <link
+      rel="stylesheet"
+      href="assets/font-awesome-4.7.0/css/font-awesome.min.css"
+    />
     <script src="main.js" defer></script>
-</head>
+  </head>
 
-<body>
+  <body>
+		<div class="blob-wrapper">
+			<div class="blob" id="blob"></div>
+		</div>
     <header class="primary-header">
-        <nav class="navbar">
-            <a href="index.html" class="logo">Neuron</a>
-            <div class="nav-wrapper" id="nav-wrapper">
-                <ul class="nav-list">
-                    <li>
-                        <a href="#hero" class="nav-link" data-text="Home">Home</a>
-                    </li>
-                    <li>
-                        <a href="#projects" class="nav-link" data-text="Projects">
+      <nav class="navbar">
+        <a href="index.html" class="logo">Neuron</a>
+        <div class="nav-wrapper" id="nav-wrapper">
+          <ul class="nav-list">
+            <li>
+              <a href="#hero" class="nav-link" data-text="Home">Home</a>
+            </li>
+            <li>
+              <a href="#projects" class="nav-link" data-text="Projects">
                 Projects
               </a>
-                    </li>
-                    <li>
-                        <a href="#about" class="nav-link" data-text="About">About</a>
-                    </li>
-                    <li>
-                        <a href="#contact" class="nav-link" data-text="Contact us">
+            </li>
+            <li>
+              <a href="#about" class="nav-link" data-text="About">About</a>
+            </li>
+            <li>
+              <a href="#contact" class="nav-link" data-text="Contact us">
                 Contact us
               </a>
-                    </li>
-                </ul>
-                <a href="#contact" class="button">apply now</a>
-            </div>
-            <button id="nav-toggle-btn" class="nav-toggle-btn">
+            </li>
+          </ul>
+          <a href="#contact" class="button">apply now</a>
+        </div>
+        <button id="nav-toggle-btn" class="nav-toggle-btn">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -52,23 +56,30 @@
             />
           </svg>
         </button>
-        </nav>
+      </nav>
     </header>
 
     <section class="hero" id="hero">
-        <div class="hero-overlay">
-            <div class="hero-content">
-                <h1>The Revolution is Here</h1>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel justo eget odio bibendum interdum ac nec enim.
-                </p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="button">Learn More</a>
-                    <a href="#contact" class="button">Contact Us</a>
-                </div>
-            </div>
+      <div class="hero-overlay">
+        <div class="hero-content">
+          <h1>The Revolution is Here</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel
+            justo eget odio bibendum interdum ac nec enim.
+          </p>
+          <div class="hero-buttons">
+            <a href="#projects" class="button">Learn More</a>
+            <a href="#contact" class="button">Contact Us</a>
+          </div>
         </div>
-        <svg class="editorial" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
+      </div>
+      <svg
+        class="editorial"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 24 150 28 "
+        preserveAspectRatio="none"
+      >
         <defs>
           <path
             id="gentle-wave"
@@ -96,16 +107,22 @@
     </section>
 
     <section class="projects-wrapper" id="projects">
-        <h1>Projects</h1>
-        <ul class="projects-list">
-            <figure>
-                <li class="project-outer" style="--rotate: 0deg">
-                    <div class="project" style="--x: 0; --y: 0">
-                        <h3>Neuron-Edu</h3>
-                        <p>
-                            A platform that offers a wide range of educational resources suitable for both students and educators. you can find something that captures your interest on this website.
-                        </p>
-                        <a href="https://www.neuron-edu.com" target="_blank" class="button">View Project</a
+      <h1>Projects</h1>
+      <ul class="projects-list">
+        <figure>
+          <li class="project-outer" style="--rotate: 0deg">
+            <div class="project" style="--x: 0; --y: 0">
+              <h3>Neuron-Edu</h3>
+              <p>
+                A platform that offers a wide range of educational resources
+                suitable for both students and educators. you can find something
+                that captures your interest on this website.
+              </p>
+              <a
+                href="https://www.neuron-edu.com"
+                target="_blank"
+                class="button"
+                >View Project</a
               >
             </div>
           </li>
@@ -117,15 +134,21 @@
                 :<br />- code completion<br />- text completion
               </p>
               <a href="" class="button">Comming Soon</a>
-                    </div>
-                </li>
-                <li class="project-outer" style="--rotate: -120deg">
-                    <div class="project">
-                        <h3>Frontline Discord Bot</h3>
-                        <p>
-                            -Allows deposits,withdraws to the bot through binance.<br /> -allows useer to view subscription and balance.<br /> -binance payment verification.
-                        </p>
-                        <a href="https://discord.gg/ZUPd9wWpzX" target="_blank" class="button">View Project</a
+            </div>
+          </li>
+          <li class="project-outer" style="--rotate: -120deg">
+            <div class="project">
+              <h3>Frontline Discord Bot</h3>
+              <p>
+                -Allows deposits,withdraws to the bot through binance.<br />
+                -allows useer to view subscription and balance.<br />
+                -binance payment verification.
+              </p>
+              <a
+                href="https://discord.gg/ZUPd9wWpzX"
+                target="_blank"
+                class="button"
+                >View Project</a
               >
             </div>
           </li>
@@ -138,294 +161,284 @@
                 money.
               </p>
               <a href="" class="button">Coming Soon</a>
-                    </div>
-                </li>
-                <li class="project-outer" style="--rotate: -240deg">
-                    <div class="project">
-                        <h3>Neuron-jobs Discord Bot</h3>
-                        <p>
-                            A platform that offers university students only the opportunity to work in university related projectscand gain experience and money. A full dedicated Bot with binance payment verification.
-                        </p>
-                        <a href="" class="button">Coming Soon</a>
-                    </div>
-                </li>
-                <li class="project-outer" style="--rotate: -300deg">
-                    <div class="project">
-                        <h3>ABCsignals Telegram Bot</h3>
-                        <p>
-                            A bot that fully runs a Telegram Crypto signals channel -Binance payment verification. -information and subscription saved to database -Auto remove members with expired subscription
-                        </p>
-                        <a href="#contact" class="button">Contact Us</a>
-                    </div>
-                </li>
-            </figure>
-            <button class="spin-btn" style="left: 1rem" onclick="projSpin('')">
+            </div>
+          </li>
+          <li class="project-outer" style="--rotate: -240deg">
+            <div class="project">
+              <h3>Neuron-jobs Discord Bot</h3>
+              <p>
+                A platform that offers university students only the opportunity
+                to work in university related projectscand gain experience and
+                money. A full dedicated Bot with binance payment verification.
+              </p>
+              <a href="" class="button">Coming Soon</a>
+            </div>
+          </li>
+          <li class="project-outer" style="--rotate: -300deg">
+            <div class="project">
+              <h3>ABCsignals Telegram Bot</h3>
+              <p>
+                A bot that fully runs a Telegram Crypto signals channel -Binance
+                payment verification. -information and subscription saved to
+                database -Auto remove members with expired subscription
+              </p>
+              <a href="#contact" class="button">Contact Us</a>
+            </div>
+          </li>
+        </figure>
+        <button class="spin-btn" style="left: 1rem" onclick="projSpin('')">
           &lt;
         </button>
-            <button class="spin-btn" style="right: 1rem" onclick="projSpin('-')">
+        <button class="spin-btn" style="right: 1rem" onclick="projSpin('-')">
           &gt;
         </button>
-        </ul>
+      </ul>
     </section>
 
     <section class="section" id="about">
-        <h2>About Us</h2>
-        <div class="about_container">
-            <div class="about_card">
-                <div class="about_content">
-                    <div class="imgBx">
-                        <img src="/assets/OIP.jpeg" />
-                    </div>
-                    <div class="contentBx">
-                        <h3>
-                            Hussein Chakroun<br /><span>Offensive security || Frontend || AI</span>
-                        </h3>
-                    </div>
-                </div>
-                <ul class="sci">
-                    <li>
-                        <a href=""><i class="fa fa-user" aria-hidden="true"></i></a>
-                    </li>
-                    <li>
-                        <a href=""><i class="fa fa-download" aria-hidden="true"></i></a>
-                    </li>
-                    <li>
-                        <a href=""><i class="fa fa-github" aria-hidden="true"></i></a>
-                    </li>
-                    <li>
-                        <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                    </li>
-                </ul>
+      <h2>About Us</h2>
+      <div class="about_container">
+        <div class="about_card">
+          <div class="about_content">
+            <div class="contentBx">
+              <h3>
+                Hussein Chakroun<br /><span
+                  >Offensive security || Frontend || AI</span
+                >
+              </h3>
             </div>
-            <div class="about_card">
-                <div class="about_content">
-                    <div class="imgBx">
-                        <img src="/assets/OIP.jpeg" />
-                    </div>
-                    <div class="contentBx">
-                        <h3>
-                            Ahmad Mohammad<br /><span>Fulll stack Web Developer</span>
-                        </h3>
-                    </div>
-                </div>
-                <ul class="sci">
-                    <li>
-                        <a href=""><i class="fa fa-user" aria-hidden="true"></i></a>
-                    </li>
-                    <li>
-                        <a href=""><i class="fa fa-download" aria-hidden="true"></i></a>
-                    </li>
-                    <li>
-                        <a href=""><i class="fa fa-github" aria-hidden="true"></i></a>
-                    </li>
-                    <li>
-                        <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                    </li>
-                </ul>
-            </div>
-            <div class="about_card">
-                <div class="about_content">
-                    <div class="imgBx">
-                        <img src="/assets/OIP.jpeg" />
-                    </div>
-                    <div class="contentBx">
-                        <h3>Yassin Hakim<br /><span>Bot Developer</span></h3>
-                    </div>
-                </div>
-                <ul class="sci">
-                    <li>
-                        <a href=""><i class="fa fa-user" aria-hidden="true"></i></a>
-                    </li>
-                    <li>
-                        <a href=""><i class="fa fa-download" aria-hidden="true"></i></a>
-                    </li>
-                    <li>
-                        <a href=""><i class="fa fa-github" aria-hidden="true"></i></a>
-                    </li>
-                    <li>
-                        <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                    </li>
-                </ul>
-            </div>
+          </div>
+          <ul class="sci">
+            <li>
+              <a href=""><i class="fa fa-user" aria-hidden="true"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa fa-download" aria-hidden="true"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa fa-github" aria-hidden="true"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            </li>
+          </ul>
         </div>
+        <div class="about_card">
+          <div class="about_content">
+            <div class="contentBx">
+              <h3>
+                Ahmad Mohammad<br /><span>Fulll stack Web Developer</span>
+              </h3>
+            </div>
+          </div>
+          <ul class="sci">
+            <li>
+              <a href=""><i class="fa fa-user" aria-hidden="true"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa fa-download" aria-hidden="true"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa fa-github" aria-hidden="true"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="about_card">
+          <div class="about_content">
+            <div class="contentBx">
+              <h3>Yassin Hakim<br /><span>Bot Developer</span></h3>
+            </div>
+          </div>
+          <ul class="sci">
+            <li>
+              <a href=""><i class="fa fa-user" aria-hidden="true"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa fa-download" aria-hidden="true"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa fa-github" aria-hidden="true"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </section>
 
     <section class="services" id="services">
-        <h2>Our Services</h2>
-        <div class="services-container">
-            <div class="services_box">
-                <div class="services_item" style="--item-bg-c: #f9b234">
-                    <a class="services-item_link">
-                        <div class="services-item_bg"></div>
+      <h2>Our Services</h2>
+      <div class="services-container">
+        <div class="services_box">
+          <div class="services_item" style="--item-bg-c: #f9b234">
+            <a class="services-item_link">
+              <div class="services-item_bg"></div>
 
-                        <div class="services-item_title">Web-Design</div>
+              <div class="services-item_title">Web-Design</div>
 
-                        <div class="services-item_date-box">
-                            Team Members:
-                            <span class="services-item_date"> 4 </span>
-                        </div>
-                    </a>
-                </div>
+              <div class="services-item_date-box">
+                Team Members:
+                <span class="services-item_date"> 4 </span>
+              </div>
+            </a>
+          </div>
 
-                <div class="services_item" style="--item-bg-c: #3ecd5e">
-                    <a class="services-item_link">
-                        <div class="services-item_bg"></div>
+          <div class="services_item" style="--item-bg-c: #3ecd5e">
+            <a class="services-item_link">
+              <div class="services-item_bg"></div>
 
-                        <div class="services-item_title">Full stack Web development</div>
+              <div class="services-item_title">Full stack Web development</div>
 
-                        <div class="services-item_date-box">
-                            Team Members:
-                            <span class="services-item_date"> 2 </span>
-                        </div>
-                    </a>
-                </div>
+              <div class="services-item_date-box">
+                Team Members:
+                <span class="services-item_date"> 2 </span>
+              </div>
+            </a>
+          </div>
 
-                <div class="services_item" style="--item-bg-c: #e44002">
-                    <a class="services-item_link">
-                        <div class="services-item_bg"></div>
+          <div class="services_item" style="--item-bg-c: #e44002">
+            <a class="services-item_link">
+              <div class="services-item_bg"></div>
 
-                        <div class="services-item_title">AI development</div>
+              <div class="services-item_title">AI development</div>
 
-                        <div class="services-item_date-box">
-                            Team Members:
-                            <span class="services-item_date"> 1 </span>
-                        </div>
-                    </a>
-                </div>
+              <div class="services-item_date-box">
+                Team Members:
+                <span class="services-item_date"> 1 </span>
+              </div>
+            </a>
+          </div>
 
-                <div class="services_item" style="--item-bg-c: #952aff">
-                    <a class="services-item_link">
-                        <div class="services-item_bg"></div>
+          <div class="services_item" style="--item-bg-c: #952aff">
+            <a class="services-item_link">
+              <div class="services-item_bg"></div>
 
-                        <div class="services-item_title">
-                            Discord & Telegram Bot development
-                        </div>
+              <div class="services-item_title">
+                Discord & Telegram Bot development
+              </div>
 
-                        <div class="services-item_date-box">
-                            Team Members:
-                            <span class="services-item_date"> 1 </span>
-                        </div>
-                    </a>
-                </div>
-                <div class="services_item" style="--item-bg-c: #0A8792">
-                    <a class="services-item_link">
-                        <div class="services-item_bg"></div>
+              <div class="services-item_date-box">
+                Team Members:
+                <span class="services-item_date"> 1 </span>
+              </div>
+            </a>
+          </div>
+          <div class="services_item" style="--item-bg-c: #0a8792">
+            <a class="services-item_link">
+              <div class="services-item_bg"></div>
 
-                        <div class="services-item_title">
-                            Mobile App Development
-                        </div>
+              <div class="services-item_title">Mobile App Development</div>
 
-                        <div class="services-item_date-box">
-                            Team Members:
-                            <span class="services-item_date"> 1 </span>
-                        </div>
-                    </a>
-                </div>
+              <div class="services-item_date-box">
+                Team Members:
+                <span class="services-item_date"> 1 </span>
+              </div>
+            </a>
+          </div>
 
-                <div class="services_item" style="--item-bg-c: #cd3e94">
-                    <a class="services-item_link">
-                        <div class="services-item_bg"></div>
+          <div class="services_item" style="--item-bg-c: #cd3e94">
+            <a class="services-item_link">
+              <div class="services-item_bg"></div>
 
-                        <div class="services-item_title">Data Analysis</div>
+              <div class="services-item_title">Data Analysis</div>
 
-                        <div class="services-item_date-box">
-                            Team Members:
-                            <span class="services-item_date"> 2 </span>
-                        </div>
-                    </a>
-                </div>
+              <div class="services-item_date-box">
+                Team Members:
+                <span class="services-item_date"> 2 </span>
+              </div>
+            </a>
+          </div>
 
-                <div class="services_item" style="--item-bg-c: #4c49ea">
-                    <a class="services-item_link">
-                        <div class="services-item_bg"></div>
+          <div class="services_item" style="--item-bg-c: #4c49ea">
+            <a class="services-item_link">
+              <div class="services-item_bg"></div>
 
-                        <div class="services-item_title">
-                            Penetration Testing
-                        </div>
-                        <div class="services-item_date-box">
-                            Team Members:
-                            <span class="services-item_date"> 2 </span>
-                        </div>
+              <div class="services-item_title">Penetration Testing</div>
+              <div class="services-item_date-box">
+                Team Members:
+                <span class="services-item_date"> 2 </span>
+              </div>
+            </a>
+          </div>
 
-                    </a>
-                </div>
+          <div class="services_item" style="--item-bg-c: #ff842b">
+            <a class="services-item_link">
+              <div class="services-item_bg"></div>
 
-                <div class="services_item" style="--item-bg-c: #ff842b">
-                    <a class="services-item_link">
-                        <div class="services-item_bg"></div>
+              <div class="services-item_title">
+                Social Media Management & Marketing
+              </div>
+              <div class="services-item_date-box">
+                Team Members:
+                <span class="services-item_date"> 1 </span>
+              </div>
+            </a>
+          </div>
 
-                        <div class="services-item_title">
-                            Social Media Management & Marketing
-                        </div>
-                        <div class="services-item_date-box">
-                            Team Members:
-                            <span class="services-item_date"> 1 </span>
-                        </div>
+          <div class="services_item" style="--item-bg-c: #6a85b6">
+            <a class="services-item_link">
+              <div class="services-item_bg"></div>
 
-                    </a>
-                </div>
+              <div class="services-item_title">
+                Researches in social sciences and communication
+              </div>
 
-                <div class="services_item" style="--item-bg-c: #6A85b6">
-                    <a class="services-item_link">
-                        <div class="services-item_bg"></div>
-
-                        <div class="services-item_title">
-                            Researches in social sciences and communication
-                        </div>
-
-                        <div class="services-item_date-box">
-                            Team Members:
-                            <span class="services-item_date"> 1 </span>
-                        </div>
-                    </a>
-                </div>
-            </div>
+              <div class="services-item_date-box">
+                Team Members:
+                <span class="services-item_date"> 1 </span>
+              </div>
+            </a>
+          </div>
         </div>
+      </div>
     </section>
     <section class="contact" id="contact">
-        <h2><span>Contact Us</span></h2>
-        <form class="contact-form" id="contact-form">
-            <div class="input-box">
-                <input type="text" id="name" name="name" required />
-                <label for="name">Name</label>
-            </div>
+      <h2><span>Contact Us</span></h2>
+      <form class="contact-form" id="contact-form">
+        <div class="input-box">
+          <input type="text" id="name" name="name" required />
+          <label for="name">Name</label>
+        </div>
 
-            <div class="input-box">
-                <input type="text" id="email" name="email" required />
-                <label for="email">Email</label>
-            </div>
+        <div class="input-box">
+          <input type="text" id="email" name="email" required />
+          <label for="email">Email</label>
+        </div>
 
-            <div class="input-box">
-                <textarea id="message" name="message" required></textarea>
-                <label for="message">Message</label>
-            </div>
+        <div class="input-box">
+          <textarea id="message" name="message" required></textarea>
+          <label for="message">Message</label>
+        </div>
 
-            <button type="submit" class="contact-submit">Send Message</button>
-        </form>
+        <button type="submit" class="contact-submit">Send Message</button>
+      </form>
     </section>
-</body>
-<footer class="footer">
+  </body>
+  <footer class="footer">
     <div class="container">
-        <div class="footer-top">
-            <div class="logo">
-                <h3>Neuron Network.</h3>
-            </div>
-            <nav class="footer-nav">
-                <a href="#hero">Home</a>
-                <a href="#about">About</a>
-                <a href="#projects">Projects</a>
-                <a href="#contatc">Contact Us</a>
-            </nav>
+      <div class="footer-top">
+        <div class="logo">
+          <h3>Neuron Network.</h3>
         </div>
-        <div class="footer-bottom">
-            <div class="social-media">
-                <a href="#"><i class="fa fa-fighter-jet" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-fighter-jet"></i></a>
-                <a href="#"><i class="fa fa-fighter-jet"></i></a>
-            </div>
-            <p>&copy; 2023 Neuron Network. All rights reserved.</p>
+        <nav class="footer-nav">
+          <a href="#hero">Home</a>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contatc">Contact Us</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <div class="social-media">
+          <a href="#"><i class="fa fa-fighter-jet" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-fighter-jet"></i></a>
+          <a href="#"><i class="fa fa-fighter-jet"></i></a>
         </div>
+        <p>&copy; 2023 Neuron Network. All rights reserved.</p>
+      </div>
     </div>
-</footer>
-
+  </footer>
 </html>
