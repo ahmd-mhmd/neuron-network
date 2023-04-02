@@ -40,6 +40,7 @@ $("#nav-toggle-btn").addEventListener("click", () => {
 });
 
 let angle = 0;
+
 function projSpin(sign) {
   spinner = document.querySelector("figure");
   if (!sign) {
